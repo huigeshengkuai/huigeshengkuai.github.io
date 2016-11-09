@@ -1,20 +1,40 @@
 <!DOCTYPE HTML>
 <html lang="en">
+
 <head>
-<title>JUST4FUN</title>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
-<style type="text/css">
-body {
-	background-color:#CCC;
-	margin:0px;
-	overflow:hidden;
-}
-</style>
-<script type="text/javascript" src="js/threecanvas.js"></script>
-<script type="text/javascript" src="js/snow.min.js"></script>
+    <title>JUST4FUN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <style type="text/css">
+        body {
+            background-image: url(/images/huajige.png);
+            background-origin: content-box;
+            background-position: 50% 70%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #000;
+            min-height: none;
+            max-height: none;
+            margin: 0px;
+            overflow: hidden;
+        }
+        
+        .brightness {
+            /**  格式，filer: brightness(效果范围)
+     *  效果范围，取值范围>=0的数字或百分数，1为无效果
+     */
+            -webkit-filter: brightness(2);
+            -moz-filter: brightness(2);
+            -o-filter: brightness(2);
+            -ms-filter: brightness(2);
+            filter: brightness(2);
+        }
+    </style>
+    <script type="text/javascript" src="js/threecanvas.js"></script>
+    <script type="text/javascript" src="js/snow.min.js"></script>
 </head>
 
-<body onload="initsnow('images/funny.png',1000,0.05,0.05,10000,70)">
+<body class="brightness" onload="initsnow('images/funny.png',1000,0.05,0.05,10000,70)">
 </body>
+
 </html>
